@@ -748,7 +748,7 @@ function renderResultados() {
       html += `<tr style="cursor:pointer" onclick="openGameModal('${h}','${a}')" title="Ver palpites">
         <td style="color:var(--muted);font-size:.8rem">Grupos</td>
         <td>${h} × ${a}</td>
-        <td class="pts-cell" style="text-align:right;font-family:monospace;white-space:nowrap">${g.golHome} – ${g.golAway}</td>
+        <td style="text-align:right;font-family:monospace;font-weight:700;color:var(--amarelo);white-space:nowrap">${g.golHome} – ${g.golAway}</td>
       </tr>`;
     });
     html += '</tbody></table></div>';
