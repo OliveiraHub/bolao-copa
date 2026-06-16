@@ -270,7 +270,6 @@
     .pts-cell { font-size: 0.95rem; }
 
     /* Resultados */
-    #tab-resultados td, #tab-resultados th { font-size: 0.75rem; padding: 6px 8px; }
     #tab-resultados h3 { font-size: 0.8rem !important; margin-bottom: 8px !important; }
 
     /* Legenda */
@@ -749,7 +748,7 @@ function renderResultados() {
       html += `<tr style="cursor:pointer" onclick="openGameModal('${h}','${a}')" title="Ver palpites">
         <td style="color:var(--muted);font-size:.8rem">Grupos</td>
         <td>${h} × ${a}</td>
-        <td style="text-align:right;font-family:monospace;font-size:1.05rem;font-weight:800;color:var(--amarelo);white-space:nowrap">${g.golHome} – ${g.golAway}</td>
+        <td class="pts-cell" style="text-align:right;font-family:monospace;white-space:nowrap">${g.golHome} – ${g.golAway}</td>
       </tr>`;
     });
     html += '</tbody></table></div>';
